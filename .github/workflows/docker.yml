@@ -34,9 +34,9 @@ jobs:
           context: .
           file: ./Dockerfile
           push: false
-          tags: ghcr.io/${{ github.repository_owner }}/stock-breakout-multi-agent:latest
-          cache-from: type=registry,ref=ghcr.io/${{ github.repository_owner }}/stock-breakout-multi-agent:cache
-          cache-to: type=registry,ref=ghcr.io/${{ github.repository_owner }}/stock-breakout-multi-agent:cache,mode=max
+          tags: ghcr.io/elimek/stock-breakout-multi-agent:latest
+          cache-from: type=registry,ref=ghcr.io/elimek/stock-breakout-multi-agent:cache
+          cache-to: type=registry,ref=ghcr.io/elimek/stock-breakout-multi-agent:cache,mode=max
 
       - name: Push image to GHCR
         uses: docker/build-push-action@v5
@@ -45,8 +45,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/stock-breakout-multi-agent:latest
-            ghcr.io/${{ github.repository_owner }}/stock-breakout-multi-agent:${{ github.sha }}
+            ghcr.io/elimek/stock-breakout-multi-agent:latest
+            ghcr.io/elimek/stock-breakout-multi-agent:${{ github.sha }}
 
       - name: Show image digest
         run: echo "Image digest = ${{ steps.build.outputs.digest }}"

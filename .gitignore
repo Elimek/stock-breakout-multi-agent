@@ -1,0 +1,19 @@
+# Logs
+logs/
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+.env
+
+# Docker artefacts
+*.tar
+
+# OS files
+.DS_Store
+Thumbs.db

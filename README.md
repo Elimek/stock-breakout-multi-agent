@@ -1,6 +1,7 @@
 # 📈 Stock Breakout Multi-Agent
 
-> Multi-agent screener for **1-hour momentum breakout** detection — LLM-powered stock scanning.
+> **多智能体 1小时动量突破扫描器** / Multi-agent 1H momentum breakout screener
+> LLM-powered stock scanning with agent orchestration
 
 <div align="center">
 
@@ -13,19 +14,21 @@
 
 ---
 
-## 🔍 What It Does
+## 🔍 这是啥 / What It Does
 
-This project uses a **multi-agent architecture** to scan stocks for breakout signals on the 1-hour timeframe. Each agent handles a specific task:
+**中文：** 多智能体架构扫描股票，捕捉 1 小时级别的突破信号。每个 Agent 负责一个环节。
 
-| Agent | Job |
-|-------|-----|
-| 🕵️ **Scanner** | Filters stocks by momentum & volume |
-| 📊 **Analyzer** | Validates breakout candidates |
-| 🤖 **Orchestrator** | Coordinates and outputs final picks |
+**EN:** A multi-agent system that scans stocks for 1H breakout signals. Each agent handles one task.
+
+| Agent | 职责 / Job |
+|-------|-----------|
+| 🕵️ **Scanner** | 筛选动量+成交量股票 / Filters stocks by momentum & volume |
+| 📊 **Analyzer** | 验证突破候选 / Validates breakout candidates |
+| 🤖 **Orchestrator** | 统筹协调输出 / Coordinates and outputs final picks |
 
 ---
 
-## 🚀 Quick Start
+## 🚀 快速开始 / Quick Start
 
 ```bash
 git clone https://github.com/Elimek/stock-breakout-multi-agent.git
@@ -36,7 +39,7 @@ python run.py
 
 ---
 
-## 🧠 How It Works
+## 🧠 架构 / Architecture
 
 ```
 Market Data → Scanner Agent → Candidates → Analyzer Agent → Validated Picks
@@ -46,24 +49,24 @@ Market Data → Scanner Agent → Candidates → Analyzer Agent → Validated Pi
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ 技术栈 / Tech Stack
 
-- **Python** — core logic
-- **LangChain** — agent orchestration
-- **OpenAI / LLM** — decision making
-- **Pandas** — data processing
+- **Python** — 核心逻辑 / Core logic
+- **LangChain** — 智能体编排 / Agent orchestration
+- **OpenAI / LLM** — 决策引擎 / Decision making
+- **Pandas** — 数据处理 / Data processing
 
 ---
 
-## 📌 Roadmap
+## 📌 规划 / Roadmap
 
-- [x] 1H momentum breakout detection
-- [ ] Multi-timeframe analysis
-- [ ] Real-time price streaming
-- [ ] Portfolio tracking
+- [x] 1H 动量突破检测 / 1H momentum breakout detection
+- [ ] 多时间框架分析 / Multi-timeframe analysis
+- [ ] 实时行情流 / Real-time price streaming
+- [ ] 投资组合追踪 / Portfolio tracking
 
 ---
 
 <div align="center">
-  <sub>Built for fun, not financial advice 🧪</sub>
+  <sub>🧪 搞着玩的，不是投资建议 / Built for fun, not financial advice</sub>
 </div>
